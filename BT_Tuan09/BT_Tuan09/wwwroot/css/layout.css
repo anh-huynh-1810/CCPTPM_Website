@@ -1,0 +1,18 @@
+﻿body {
+    margin: 0;
+}
+
+header {
+    line-height: 5rem;
+    font-size: x-large;
+}
+
+.footer-text {
+    display: flex;
+    align-items: flex-end;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+    color: white;
+    font-weight: bold;
+}

@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.PageName</title>
+    <link href="~/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/layout.css" rel="stylesheet" />
+    @RenderSection("CSS", required: false)
+</head>
+<body>
+    @*header*@
+    <header class="container-fluid text-center bg-secondary text-light">
+        @ViewBag.Title
+    </header>
+    @*menu*@
+    <section class="container-fluid bg-info">
+        <nav class="container navbar navbar-expand-lg navbar-light bg-info">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">CMS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="">Danh mục</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="">Liên hệ</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Tìm</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    @RenderBody()
+
+    @*slider*@
+    <div class="container">
+        <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner p-1">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="~/logo/logo-1.jpg" class="d-block w-100" alt="" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="~/logo/logo-2.jpg" class="d-block w-100" alt="" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="~/logo/logo-3.jpg" class="d-block w-100" alt="" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="~/logo/logo-4.jpg" class="d-block w-100" alt="" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="~/logo/logo-5.jpg" class="d-block w-100" alt="" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="~/logo/logo-6.jpg" class="d-block w-100" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="~/logo/logo-7.jpg" class="d-block w-100" alt="" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="~/logo/logo-8.jpg" class="d-block w-100" alt="" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="~/logo/logo-9.jpg" class="d-block w-100" alt="" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="~/logo/logo-10.jpg" class="d-block w-100" alt="" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="~/logo/logo-11.jpg" class="d-block w-100" alt="" />
+                        </div>
+                        <div class="col-md-2">
+                            <img src="~/logo/logo-12.jpg" class="d-block w-100" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    @*footer*@
+    <footer class="bg-black text-light">
+        <div class="container">
+            <div class="row footer-text">
+                <div class="col-lg-6 col-md-6 ">
+                    <h1 class="display-3">CMS</h1>
+                    <p style="line-height: 1.7; font-size: 12px; margin: 5px">
+                        Tạp chí điện tử Tri thức trực tuyến <br>
+                        Cơ quan chủ quản: Hội Xuất bản Việt Nam <br>
+                        Giấy phép báo chí: số 75/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 26/02/2020<br>
+                        Phụ trách điều hành: Nguyễn Nguyên<br>
+                        Tổng thư ký Tòa soạn: Lâm Quang Hiếu<br>
+                        © 2021 Toàn bộ bản quyền thuộc Tri thức trực tuyến
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-2"></div>
+                <div class="col-lg-4 col-md-4">
+                    <p style="line-height: 1.7; font-size: 12px;">
+                        Tòa soạn: Tầng 7, D29 Phạm Văn Bạch, Quận Cầu Giấy, Hà Nội <br>
+                        Hotline: 0931.222.666 - Email: toasoan@CMS.vn <br>
+                    </p>
+                    <p class="links" style="line-height: 1.7; font-size: 12px;">
+                        <a class="link-intro" style="display: none;">Giới thiệu</a><a class="link-contact" href="/lien-he.html">Liên hệ</a> | <a target="_blank" href="//CMSnews.vn/careers/">Tuyển dụng</a> | <a class="link-ads">Quảng cáo</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/vendor/jquery.min.js"></script>
+    <script src="~/vendor/bootstrap/js/bootstrap.min.js"></script>
+    @RenderSection("JS", required: false)
+</body>
+</html>

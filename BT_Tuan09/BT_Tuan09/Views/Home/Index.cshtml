@@ -1,0 +1,86 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.PageName = "Trang chủ";
+    ViewBag.Title = "Trang chủ";
+}
+@*phần slideshow*@
+<div class="container">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/slider/1.jpg" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="~/slider/2.jpg" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="~/slider/3.jpg" class="d-block w-100" alt="">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+@*tin tức mới*@
+<div class="container-fluid bg-success">
+    <nav class="container bg-success">
+        <p class="text">Tin tức mới</p>
+    </nav>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <a class="nav-link" asp-controller="Post" asp-action="Detail">
+                <img src="~/img/h2.jpg" class="d-block w-100" alt="" />
+                <p class="h6">Tin tức 1</p>
+            </a>
+            <p class="lead">
+                This is a lead paragraph. It stands out from regular paragraphs.
+            </p>
+        </div>
+        <div class="col-md-3">
+            <a class="nav-link" href="#">
+                <img src="~/img/h3.jpg" class="d-block w-100" alt="" />
+                <p class="h6">Tin tức 2</p>
+            </a>
+            <p class="lead">
+                This is a lead paragraph. It stands out from regular paragraphs.
+            </p>
+        </div>
+        <div class="col-md-3">
+            <a class="nav-link" href="#">
+                <img src="~/img/h4.jpg" class="d-block w-100" alt="" />
+                <p class="h6">Tin tức 3</p>
+            </a>
+            <p class="lead">
+                This is a lead paragraph. It stands out from regular paragraphs.
+            </p>
+        </div>
+        <div class="col-md-3">
+            <a class="nav-link" href="#">
+                <img src="~/img/h5.jpg" class="d-block w-100" alt="" />
+                <p class="h6">Tin tức 4</p>
+            </a>
+            <p class="lead">
+                This is a lead paragraph. It stands out from regular paragraphs.
+            </p>
+        </div>
+    </div>
+</div>
+
+@section CSS{
+    <link href="~/css/index.css" rel="stylesheet" />
+}

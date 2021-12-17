@@ -1,0 +1,33 @@
+﻿body {
+}
+.bg-warning {
+    line-height: 2.5rem!important;
+}
+.content{
+    padding: 1vh 10vh 1vh 10vh;
+}
+.content p{
+    padding: 20px 0 0 0;
+}
+.lead {
+    font-size: 1rem !important;
+    font-weight: 100 !important;
+    color: black !important;
+    padding: 0 1rem;
+}
+.h6 {
+    padding-top: 10px;
+    margin-bottom: 0;
+    color: black !important;
+}
+.h6:hover {
+    color: #1b67ff !important;
+}
+.row {
+    --bs-gutter-x: 0!important;
+}
+.b {
+    border-left-style: solid;
+    border-width: 1px;
+    border-color: #a7a7a7;
+}
